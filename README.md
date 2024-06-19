@@ -60,7 +60,8 @@ To run this project, you need a web browser that supports HTML5 and JavaScript.
 
 ## Screenshots
 
-![Screenshot of the game](screenshot.png)
+![image](https://github.com/Satyam22462/2048-Game/assets/119166910/5cc2f857-f99d-4721-aa77-cff5cda6077c)
+
 
 
 ## Acknowledgments
