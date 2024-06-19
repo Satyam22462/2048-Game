@@ -1,0 +1,142 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #faf8ef;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+#container {
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    background-color: #bbada0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: #cdc1b4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #776e65;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.tile:not(:empty) {
+    transform: scale(1.1);
+}
+
+.tile-2 {
+    background-color: #eee4da;
+    color: #776e65;
+}
+
+.tile-4 {
+    background-color: #ede0c8;
+    color: #776e65;
+}
+
+.tile-8 {
+    background-color: #f2b179;
+    color: #f9f6f2;
+}
+
+.tile-16 {
+    background-color: #f59563;
+    color: #f9f6f2;
+}
+
+.tile-32 {
+    background-color: #f67c5f;
+    color: #f9f6f2;
+}
+
+.tile-64 {
+    background-color: #f65e3b;
+    color: #f9f6f2;
+}
+
+.tile-128 {
+    background-color: #edcf72;
+    color: #f9f6f2;
+}
+
+.tile-256 {
+    background-color: #edcc61;
+    color: #f9f6f2;
+}
+
+.tile-512 {
+    background-color: #edc850;
+    color: #f9f6f2;
+}
+
+.tile-1024 {
+    background-color: #edc53f;
+    color: #f9f6f2;
+}
+
+.tile-2048 {
+    background-color: #edc22e;
+    color: #f9f6f2;
+}
+
+.hidden {
+    display: none;
+}
+
+#score-container {
+    margin: 20px 0;
+}
+
+#score {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #bbada0;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#game-over {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: red;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    background-color: #8f7a66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #776e65;
+}
